@@ -1,0 +1,9 @@
+:root {
+    --background: lightgray;
+    --navbar: gray;
+}
+
+
+body {
+    background-color: var(--background);
+}
