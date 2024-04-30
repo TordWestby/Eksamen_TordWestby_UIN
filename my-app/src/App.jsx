@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import './style/style.css';
-import Layout from './components/layout';
+import './frontend/style/style.css'
+import Layout from './frontend/components/layout';
 
 function App() {
   return (
