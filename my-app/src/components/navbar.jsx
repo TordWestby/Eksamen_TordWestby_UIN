@@ -7,17 +7,22 @@ export default function Navbar() {
         <nav>
             <ul>
                 <li>
-                    <a href="">test1</a>
+                    <a href="/">Home</a>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <a href="">test2</a>
+                    <a href="/teams">teams</a>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <a href="">test3</a>
+                    <a href="/searchresults">Searchresults</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="/pokemons">Pokemons</a>
                 </li>
             </ul>
         </nav>
