@@ -25,6 +25,11 @@ export default function Navbar() {
                     <a href="/pokemons">Pokemons</a>
                 </li>
             </ul>
+            <ul>
+                <li>
+                    <input type="text" name="search-bar" id="search-bar" placeholder='Søk her...'/>
+                </li>
+            </ul>
         </nav>
         </>
     )

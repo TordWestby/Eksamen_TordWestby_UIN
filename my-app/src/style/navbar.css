@@ -2,6 +2,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: baseline;
     background-color: var(--navbar);
     height: 70px;
 }
@@ -26,4 +27,16 @@ nav ul li a:hover {
     color: white;
     text-decoration: underline;
     transition: 0.32s;
+}
+
+nav ul li input {
+    width: auto;
+    height: 40px;
+    background-color: white;
+    color: black;
+}
+
+nav ul li input::placeholder{
+    color: black;
+    font-size: 20px;
 }
