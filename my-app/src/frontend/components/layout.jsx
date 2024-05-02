@@ -25,4 +25,4 @@ const Layout = () => {
 export default Layout;
 
 
-//Denne koden er bygd på denne artikkelen fra blog.logorocket.com   https://blog.logrocket.com/create-responsive-navbar-react-css/ 
+//Denne koden er bygd på denne artikkelen fra blog.logorocket.com av Chinwike Maduabuchi  https://blog.logrocket.com/create-responsive-navbar-react-css/ 
