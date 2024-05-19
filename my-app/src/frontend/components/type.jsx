@@ -1,1 +1,0 @@
-//type.jsx skal liste opp lle pokemonene som tilhører denne typen!

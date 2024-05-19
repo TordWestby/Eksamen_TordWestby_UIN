@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 
-function PokemonCard({ name}) {
+function TypeCard({ name}) {
     return(
         <div className='border-box'>
-            <p>{name}</p>
+            <a href="#">{name}</a>
         </div>
     )
 }
 
-export default PokemonCard;
+export default TypeCard;

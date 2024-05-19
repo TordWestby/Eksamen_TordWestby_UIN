@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import PokemonCard from '../components/pokemon-card';
+import TypeCard from '../components/type-card';
 
+//Henter ut de 9 første pokemonene!
 export default function Home() {
     const [pokemonData, setPokemonData] = useState([]);
 
@@ -19,15 +21,46 @@ export default function Home() {
     }, []);
 
 
+    //Henter ut pokemon typene!
+    const [Pokemontype, setPokemonType] = useState([]);
+
+    const fetchInfo = async () => {
+        try {
+            const typeResponse = await fetch('https://pokeapi.co/api/v2/type');
+            const typeData = await typeResponse.json();
+            setPokemonType(typeData.results);
+        } catch(typeError) {
+            console.log('Feil ved henting av pokemon typene', typeError);
+        }
+    };
+
+    React.useEffect(() => {
+        fetchInfo();
+    }, []);
+
     return (
-        <div className='pokecard'>
+        <>
+        <article id='home'>
+            <h1>Main Pokemons</h1>
+            <article className='main-pokemons'>
             {pokemonData.map((pokemon, index) => (
                 <PokemonCard
                 key={index}
                 name={pokemon.name}
                 />
             ))}
-        </div>
+            </article>
+            <h1>Type</h1>
+            <article className='pokemon-types'>
+                {Pokemontype.map((pokemon, index) => (
+                    <TypeCard
+                    key={index}
+                    name={pokemon.name}
+                    />
+                ))}
+            </article>
+        </article>
+        </>
     );
 }
 /*

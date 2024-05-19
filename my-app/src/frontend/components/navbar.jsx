@@ -12,6 +12,11 @@ export default function Navbar() {
             </ul>
             <ul>
                 <li>
+                    <a href="/type">Type</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
                     <a href="/teams">teams</a>
                 </li>
             </ul>

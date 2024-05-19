@@ -29,10 +29,6 @@ body {
 }
 
 
-.pokecard {
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
 
 .border-box {
     display: flex;
@@ -40,4 +36,39 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0.5rem;
+}
+
+/*===Home page styling===*/
+/*Pokemon types styling (home)*/
+
+.pokemon-types {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.pokemon-types a {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+/*Main Pokemons styling (home)*/
+.main-pokemons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.main-pokemons p {
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+#home {
+    margin-left: 20rem;
+    margin-right: 20rem;
 }
