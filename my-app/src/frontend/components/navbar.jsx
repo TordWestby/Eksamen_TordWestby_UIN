@@ -17,12 +17,12 @@ export default function Navbar() {
             </ul>
             <ul>
                 <li>
-                    <a href="/searchresults">Searchresults</a>
+                    <a href="/type">Type</a>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <a href="/pokemons">Pokemons</a>
+                    <a href="/pokemon">Pokemons</a>
                 </li>
             </ul>
             <ul>
