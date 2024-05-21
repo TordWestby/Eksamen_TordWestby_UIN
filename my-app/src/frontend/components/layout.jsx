@@ -3,8 +3,8 @@ import Navbar from './navbar';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from '../pages/home';
 import Teams from '../pages/teams';
-import SearchResults from '../pages/searchresults';
-import Pokemons from '../pages/pokemon';
+import SearchResults from '../pages/searchresult';
+import Pokemon from '../pages/pokemon';
 import Type from '../pages/type';
 
 const Layout = () => {
@@ -16,7 +16,8 @@ const Layout = () => {
                     <Route path='/' element={<Home />} />
                     <Route path='/teams' element={<Teams />} />
                     <Route path='/searchresults' element={<SearchResults />} />
-                    <Route path='/pokemon' element={<Pokemons />} />
+                    <Route path='/pokemon/:name' element={<Pokemon />} />
+                    <Route path='/pokemon' element={<Pokemon />} />
                     <Route path='/type' element={<Type />} />
                 </Routes>
             </main>
@@ -25,6 +26,7 @@ const Layout = () => {
 };
 
 export default Layout;
+
 
 
 //Denne koden er bygd på denne artikkelen fra blog.logorocket.com av Chinwike Maduabuchi  https://blog.logrocket.com/create-responsive-navbar-react-css/ 

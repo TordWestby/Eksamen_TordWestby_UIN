@@ -22,7 +22,7 @@ export default function Navbar() {
             </ul>
             <ul>
                 <li>
-                    <a href="/pokemon">Pokemons</a>
+                    <a href="/pokemon">Pokemon</a>
                 </li>
             </ul>
             <ul>

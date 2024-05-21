@@ -4,13 +4,13 @@ import TypeCard from '../components/type-card';
 
 //Henter ut de 9 første pokemonene!
 export default function Home() {
-    const [pokemonData, setPokemonData] = useState([]);
+    const [pokemonData, setPokemonInfoData] = useState([]);
 
     const fetchData = async () => {
         try  {
             const response = await fetch('https://pokeapi.co/api/v2/pokemon?limit=9');
             const data = await response.json();
-            setPokemonData(data.results);
+            setPokemonInfoData(data.results);
         } catch(error) {
             console.error('Feil ved henting av data', error);
         }
