@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 
 const Pokemon = () => {
@@ -55,7 +55,7 @@ const Pokemon = () => {
 export default Pokemon;
 
 /*
-Denne koden er stort laget/tatt stor inspirasjon fra med hjelp av Ki verktøyet ChatGpt fra OpenAi
+Denne koden er stort sett laget/tatt stor inspirasjon fra med hjelp av Ki verktøyet ChatGpt fra OpenAi
 Chat linken:https://chatgpt.com/share/7e83be6a-d9c7-4bd7-b527-2b288df5a074
 OpenAi ChatGpt (Versjon for den 21.05.2024).
 */

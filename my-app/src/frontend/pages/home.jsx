@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import PokemonCard from '../components/pokemon-card';
 import TypeCard from '../components/type-card';
 
